@@ -741,13 +741,8 @@ spec:
           value: "frontend:80"
         - name: USERS
           value: "10"
-        resources:
-          requests:
-            cpu: 300m
-            memory: 256Mi
-          limits:
-            cpu: 500m
-            memory: 512Mi
+        - name: RATE
+          value: "1"
 ---
 apiVersion: v1
 kind: ServiceAccount
